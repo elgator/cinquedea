@@ -9,9 +9,9 @@ function is_palindrome(pal_str){
 	
 	} else {
 		
-		first_char = pal_str[0].toLowerCase();
-		last_char = pal_str[pal_str.length - 1].toLowerCase();
-		shorter = '';
+		let first_char = pal_str[0].toLowerCase();
+		let last_char = pal_str[pal_str.length - 1].toLowerCase();
+		let shorter = '';
 		
 		// drop first if garbage
 		if (garbage_chars.includes(first_char)){ 
@@ -45,7 +45,7 @@ function test_pal(pal_str, required){
 	let pal_space = "";
 	
 	if (required) req_space = " ";
-	pal = is_palindrome(pal_str);
+	let pal = is_palindrome(pal_str);
 	if (pal) pal_space = " ";
 	if (DEBUG) console.log("SHOULD | ACTUAL | STRING");
 	console.log(" " + req_space + required + " |  " + pal_space + pal + " | " + pal_str);
